@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> WebFinal </title>
+	<meta charset="utf-8">
+	<link <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<script
+	src="https://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous"></script>
+	<!-- <script src="GameSudoku.js"></script> -->
+	<link rel="stylesheet" href="StyleSudoku.css">
+	
+</head>
+
+<header class="header">
+
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+		<a class="navbar-brand" href="GalaDarbsWEB.html"><img src="https://www.freeiconspng.com/uploads/letter-l-icon-png-28.png" id="logo" width=100px></a>
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse text-light" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="GalaDarbsWEB.html">Home<span class="sr-only"></span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#jumpAboutUs">About Us</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#jumpReadMore">Read More</a>
+				</li>
+				
+			</ul>
+		</div>
+	</nav>
+</div>
+
+</header>
+<br>
+
+<h1>Let's play some SUDOKU</h1>
+<div class="container-fluid" id="sudoku">
+<!-- 	<div class="row"> -->
+
+		<div class="row">
+
+			<div class="col" id="paddingtable">
+
+			<table id="sudoku2" align="center">
+				<thead>
+					<tr>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="cell-border-top cell-border-left" >
+							<input type="numbers" size="1" id="value0"></input>
+						</td>
+						<td class="cell-border-top">
+							<input type="numbers" size="1" id="value1"></input>
+						</td>
+						<td class="cell-border-top cell-border-right">
+							<input type="numbers" size="1" id="value2"></input>
+						</td>
+						<td class="cell-border-top">
+							<input type="numbers" size="1" id="value3"></input>
+						</td>
+						<td class="cell-border-top">
+							<input type="numbers" size="1" id="value4"></input>
+						</td>
+						<td class="cell-border-top cell-border-right">
+							<input type="numbers" size="1" id="value5"></input>
+						</td>
+						<td class="cell-border-top cell-border-left">
+							<input type="numbers" size="1" id="value6"></input>
+						</td>
+						<td class="cell-border-top">
+							<input type="numbers" size="1" id="value7"></input>
+						</td>
+						<td class="cell-border-top cell-border-right">
+							<input type="numbers" size="1" id="value8"></input>
+						</td>
+					</tr>
+					<tr >
+						<td class="cell-border-left">
+							<input type="numbers" size="1" id="value9"></input>
+						</td>
+						<td>
+							<input type="numbers" size="1" id="value10"></input>
+						</td>
+						<td>
+							<input type="numbers" size="1" id="value11"></input>
+						</td>
+						<td class="cell-border-left">
+							<input type="numbers" size="1" id="value12"></input>
+						</td>
+						<td>
+							<input type="numbers" size="1" id="value13"></input>
+						</td>
+						<td>
+							<input type="numbers" size="1" id="value14"></input>
+						</td>
+						<td class="cell-border-left">
+							<input type="numbers" size="1" id="value15"></input>
+						</td>
+						<td>
+							<input type="numbers" size="1" id="value16"></input>
+						</td>
+						<td class="cell-border-right">
+							<input type="numbers" size="1" id="value17"></input>
+						</td>
+					</tr>
+					<tr class="cell-border-bottom">
+						<td class="cell-border-left">
+							<input type="numbers" size="1" id="value18"></input>
+						</td>
+						<td>
+							<input type="numbers" size="1" id="value19"></input>
+						</td>
+						<td>
+							<input type="numbers" size="1" id="value20"></input>
+						</td>
+						<td class="cell-border-left">
+							<input type="numbers" size="1" id="value21"></input>
+						</td>
+						<td>
+							<input type="numbers" size="1" id="value22"></input>
+						</td>
+						<td>
+							<input type="numbers" size="1" id="value23"></input>
+						</td>
+						<td class="cell-border-left">
+							<input type="numbers" size="1" id="value24"></input>
+						</td>
+						<td>
+							<input type="numbers" size="1" id="value25"></input>
+						</td>
+						<td class="cell-border-right">
+							<input type="numbers" size="1" id="value26"></input>
+						</td>
+					</tr>
+					<tr>
+						<td class="cell-border-left">
+							<input type="numbers" size="1" id="value27"></input>
+						</td>
+						<td>
+							<input type="numbers" size="1" id="value28"></input>
+						</td>
+						<td>
+							<input type="numbers" size="1" id="value29"></input>
+						</td>
+						<td class="cell-border-left">
+							<input type="numbers" size="1" id="value30"></input>
+						</td>
+						<td>
+							<input type="numbers" size="1" id="value31"></input>
+						</td>
+						<td>
+							<input type="numbers" size="1" id="value32"></input>
+						</td>
+						<td class="cell-border-left">
+							<input type="numbers" size="1" id="value33"></input>
+						</td>
+						<td>
+							<input type="numbers" size="1" id="value34"></input>
+						</td>
+						<td class="cell-border-right">
+							<input type="numbers" size="1" id="value35"></input>
+						</td>
+					</tr>
+					<tr>
+						<td class="cell-border-left">
+							<input type="numbers" size="1" id="value36"></input>
+						</td>
+						<td>
+							<input type="numbers" size="1" id="value37"></input>
+						</td>
+						<td>
+							<input type="numbers" size="1" id="value38"></input>
+						</td>
+						<td class="cell-border-left">
+							<input type="numbers" size="1" id="value39"></input>
+						</td>
+						<td>
+							<input type="numbers" size="1" id="value40"></input>
+						</td>
+						<td>
+							<input type="numbers" size="1" id="value41"></input>
+						</td>
+						<td class="cell-border-left">
+							<input type="numbers" size="1" id="value42"></input>
+						</td>
+						<td>
+							<input type="numbers" size="1" id="value43"></input>
+						</td>
+						<td class="cell-border-right">
+							<input type="numbers" size="1" id="value44"></input>
+						</td>
+					</tr>
+					<tr class="cell-border-bottom">
+						<td class="cell-border-left">
+							<input type="numbers" size="1" id="value45"></input>
+						</td>
+						<td>
+							<input type="numbers" size="1" id="value46"></input>
+						</td>
+						<td>
+							<input type="numbers" size="1" id="value47"></input>
+						</td>
+						<td class="cell-border-left">
+							<input type="numbers" size="1" id="value48"></input>
+						</td>
+						<td>
+							<input type="numbers" size="1" id="value49"></input>
+						</td>
+						<td>
+							<input type="numbers" size="1" id="value50"></input>
+						</td>
+						<td class="cell-border-left">
+							<input type="numbers" size="1" id="value51"></input>
+						</td>
+						<td>
+							<input type="numbers" size="1" id="value52"></input>
+						</td>
+						<td class="cell-border-right">
+							<input type="numbers" size="1" id="value53"></input>
+						</td>
+					</tr>
+					<tr>
+						<td class="cell-border-left">
+							<input type="numbers" size="1" id="value54"></input>
+						</td>
+						<td>
+							<input type="numbers" size="1" id="value55"></input>
+						</td>
+						<td>
+							<input type="numbers" size="1" id="value56"></input>
+						</td>
+						<td class="cell-border-left">
+							<input type="numbers" size="1" id="value57"></input>
+						</td>
+						<td>
+							<input type="numbers" size="1" id="value58"></input>
+						</td>
+						<td>
+							<input type="numbers" size="1" id="value59"></input>
+						</td>
+						<td class="cell-border-left">
+							<input type="numbers" size="1" id="value60"></input>
+						</td>
+						<td>
+							<input type="numbers" size="1" id="value61"></input>
+						</td>
+						<td class="cell-border-right">
+							<input type="numbers" size="1" id="value62"></input>
+						</td>
+					</tr>
+					<tr>
+						<td class="cell-border-left">
+							<input type="numbers" size="1" id="value63"></input>
+						</td>
+						<td>
+							<input type="numbers" size="1" id="value64"></input>
+						</td>
+						<td>
+							<input type="numbers" size="1" id="value65"></input>
+						</td>
+						<td class="cell-border-left">
+							<input type="numbers" size="1" id="value66"></input>
+						</td>
+						<td>
+							<input type="numbers" size="1" id="value67"></input>
+						</td>
+						<td>
+							<input type="numbers" size="1" id="value68"></input>
+						</td>
+						<td class="cell-border-left">
+							<input type="numbers" size="1" id="value69"></input>
+						</td>
+						<td>
+							<input type="numbers" size="1" id="value70"></input>
+						</td>
+						<td class="cell-border-right">
+							<input type="numbers" size="1" id="value71"></input>
+						</td>
+					</tr>
+					<tr class="cell-border-bottom">
+						<td class="cell-border-left">
+							<input type="numbers" size="1" id="value72"></input>
+						</td>
+						<td>
+							<input type="numbers" size="1" id="value73"></input>
+						</td>
+						<td>
+							<input type="numbers" size="1" id="value74"></input>
+						</td>
+						<td class="cell-border-left">
+							<input type="numbers" size="1" id="value75"></input>
+						</td>
+						<td>
+							<input type="numbers" size="1" id="value76"></input>
+						</td>
+						<td>
+							<input type="numbers" size="1" id="value77"></input>
+						</td>
+						<td class="cell-border-left">
+							<input type="numbers" size="1" id="value78"></input>
+						</td>
+						<td>
+							<input type="numbers" size="1" id="value79"></input>
+						</td>
+						<td class="cell-border-right">
+							<input type="numbers" size="1" id="value80"></input>
+						</td>
+					</tr>
+				</tbody>
+
+			</table>
+<div class="wrapper">
+			<button class="btn btn-primary" id="moreBtn" align="center" onclick="test();">Test</button>
+		</div>
+		</form>
+
+		<script>
+			var board=[];
+			var userBoard = [];
+			var randomBoard = [];
+
+			function game(){
+
+				board[0] = [4,2,6,5,7,1,3,9,8,8,5,7,2,9,3,1,4,6,1,3,9,4,6,8,2,7,5,9,7,1,3,8,5,6,2,4,5,4,3,7,2,6,8,1,9,6,8,2,1,4,9,7,5,3,7,9,4,6,3,2,5,8,1,2,6,5,8,1,4,9,3,7,3,1,8,9,5,7,4,6,2];
+
+				board[1] = [4,3,5,2,6,9,7,8,1,6,8,2,5,7,1,4,9,3,1,9,7,8,3,4,5,6,2,8,2,6,1,9,5,3,4,7,3,7,4,6,8,2,9,1,5,9,5,1,7,4,3,6,2,8,5,1,9,3,2,6,8,7,4,2,4,8,9,5,7,1,3,6,7,6,3,4,1,8,2,5,9];
+
+				board[2]=[5,6,8,3,1,9,4,7,2,7,9,1,4,5,2,3,6,8,2,3,4,6,7,8,5,9,1,6,1,9,5,8,4,7,2,3,3,2,5,7,9,1,6,8,4,4,8,7,2,3,6,9,1,5,1,4,3,8,6,7,2,5,9,8,5,6,9,2,3,1,4,7,9,7,2,1,4,5,8,3,6];
+
+var number = Math.floor(Math.random() * 3); // uzģenerēs skaitli no 0 līdz 2
+randomBoard = board[number];
+
+document.getElementById("value0").value = randomBoard[0];
+document.getElementById("value5").value = randomBoard[5];
+document.getElementById("value6").value = randomBoard[6];
+document.getElementById("value8").value = randomBoard[8];
+document.getElementById("value12").value = randomBoard[12];
+document.getElementById("value14").value = randomBoard[14];
+document.getElementById("value17").value = randomBoard[17];
+document.getElementById("value19").value = randomBoard[19];
+document.getElementById("value21").value = randomBoard[21];
+document.getElementById("value25").value = randomBoard[25];
+document.getElementById("value27").value = randomBoard[27];
+document.getElementById("value28").value = randomBoard[28];
+document.getElementById("value29").value = randomBoard[29];
+document.getElementById("value32").value = randomBoard[32];
+document.getElementById("value33").value = randomBoard[33];
+document.getElementById("value38").value = randomBoard[38];
+document.getElementById("value40").value = randomBoard[40];
+document.getElementById("value50").value = randomBoard[50];
+document.getElementById("value55").value = randomBoard[55];
+document.getElementById("value57").value = randomBoard[57];
+document.getElementById("value58").value = randomBoard[58];
+document.getElementById("value61").value = randomBoard[61];
+document.getElementById("value62").value = randomBoard[62];
+document.getElementById("value69").value = randomBoard[69];
+document.getElementById("value70").value = randomBoard[70];
+document.getElementById("value74").value = randomBoard[74];
+document.getElementById("value77").value = randomBoard[77];
+console.log(randomBoard);
+}
+window.onload=game;
+
+function test(){
+
+	for(var i = 0; i <= 80; i++){
+		var value = document.getElementById("value" + i).value;
+		document.getElementById("value" + i).style.backgroundColor = "white";
+		userBoard[i] = value;}
+// savācam visas ievadītās vērtības masīvā userBoard
+for(var i = 0; i <= 80; i++){
+	if (randomBoard[i]!=userBoard[i]){
+		document.getElementById("value" + i).style.backgroundColor = "red";
+		alert ("nav pareizi");
+		return false;
+	} 
+}
+alert ("pareizi");
+return true;
+
+}
+</script>
+</div>
+
+<div class="col">
+		<img class="img img-fluid" src="https://img00.deviantart.net/4f7f/i/2015/019/d/0/audrey_hepburn_by_mad42sam-d8en5dc.png" width="350px">
+
+	
+	<blockquote class="blockquote">
+		<p class="mb-0">Nothing is impossible, the word itself says 'I'm possible'!</p>
+		<footer class="blockquote-footer">Audrey Hepburn</footer>
+	</blockquote>
+	</div>
+</div>
+
+
+
+
+
+<!-- <div class="container-fluid"> -->
+	<!-- <div class="col-6">
+		<img class="img img-fluid" src="https://img00.deviantart.net/4f7f/i/2015/019/d/0/audrey_hepburn_by_mad42sam-d8en5dc.png" width="350px">
+
+	</div>
+	<blockquote class="blockquote">
+		<p class="mb-0">Nothing is impossible, the word itself says 'I'm possible'!</p>
+		<footer class="blockquote-footer">Audrey Hepburn</footer>
+	</blockquote>
+</div> -->
+
+<hr>
+<h1 id="jumpAboutUs">About Us</h1>
+
+	<div class="container-fluid" id="aboutUs">
+		
+		<div class="row">
+			<div class="col-12 col-sm-6 col-md-8 text-light text-justify" >
+
+				<div class="p-1" id="aboutUs1">
+					<article>
+						You've seen inspirational quotes that encourage you to get out and do something strange—something you wouldn't normally do—but getting out of your routine just takes so much work. There's actually a lot of science that explains why it's so hard to break out of your comfort zone, and why it's good for you when you do it. With a little understanding and a few adjustments, you can break away from your routine and do great things.
+						<br>
+						It's important to push the boundaries of your comfort zone, and when you do, it's kind of a big deal. But what is the "comfort zone" exactly? Why is it that we tend to get comfortable with the familiar and our routines, but when we're introduced to new and interesting things, the glimmer fades so quickly? Finally, what benefit do we derive from breaking out of our comfort zone, and how do we do it? Answering those questions is a tall order, but it's not too hard to do. Let's get started.
+						<br>
+						There are lots of ways to stretch your personal boundaries. You could learn a new language or skill. Learning a new language has multiple benefits, many of which extend to learning any new skill. Connect with people that inspire you, or volunteer with an organization that does great work. Travel, whether you go around the block or across the globe. If you've lived your whole life seeing the world from your front door, you're missing out. Visiting new and different places is perhaps one of the best ways to really broaden your perspectives, and it doesn't have to be expensive or difficult to do. The experiences you have may be mind-blowing or regrettable, but that doesn't matter. The point is that you're doing it, and you're pushing yourself past the mental blocks that tell you to do nothing.
+					</article>
+				</div>
+
+			</div>
+			<br>
+
+
+			<div class="col-6 col-md-4 text-light text-justify" id="aboutUs2">
+
+				<img class="img img-fluid" src="http://cdn.shopify.com/s/files/1/0943/9558/products/ExploreMoreBlack_e5d8aaaa-601b-47d6-b64f-2bb08913474a_grande.png?v=1505164507">
+				The benefits you get after stepping outside of your comfort zone can linger. There's the overall self-improvement you get through the skills you're learning, the new foods you're trying, the new country you're visiting, and the new job you're interviewing for. There's also the soft mental benefits you get from broadening your horizons.
+			</div>
+		</div>
+	</div>
+	<br>
+
+	<h1 id="jumpReadMore">Read More</h1>
+	<div class="container-fluid">
+		
+
+		<div class="row">
+
+			<div class="col">
+				<article>
+					<img class="img img-fluid" src="http://smartandrelentless.com/wp-content/uploads/2016/05/comfort-zone1.jpg">
+					<h2>The Science of Your "Comfort Zone," and Why It's So Hard to Leave It</h2>
+					Simply, your comfort zone is a behvioral space where your activities and behaviors fit a routine and pattern that minimizes stress and risk. It provides a state of mental security. You benefit in obvious ways: regular happiness, low anxiety, and reduced stress.
+					<br>
+					The idea of the comfort zone goes back to a classic experiment in psychology. Back in 1908, psychologists Robert M. Yerkes and John D. Dodson explained that a state of relative comfort created a steady level of performance In order to maximize performance, however, we need a state of relative anxiety—a space where our stress levels are slightly higher than normal. This space is called "Optimal Anxiety," and it's just outside our comfort zone. Too much anxiety and we're too stressed to be productive, and our performance drops off sharply.
+					<br>
+					The idea of optimal anxiety isn't anything new. Anyone who's ever pushed themselves to get to the next level or accomplish something knows that when you really challenge yourself, you can turn up amazing results. More than a few studies support the point. However, pushing too hard can actually cause a negative result, and reinforce the idea that challenging yourself is a bad idea. It's our natural tendency to return to an anxiety neutral, comfortable state. You can understand why it's so hard to kick your brain out of your comfort zone.
+					<br>
+					Even so, your comfort zone is neither a good or bad thing. It's a natural state that most people trend towards. Leaving it means increased risk and anxiety, which can have positive and negative results (which we'll get to in a moment), but don't demonize your comfort zone as something holding you back. We all need that head-space where we're least anxious and stressed so we can process the benefits we get when we leave it. 
+				</article>
+			</div>
+			<div class="col">
+				<article>
+					<img class="img img-fluid" src="https://media.angieslist.com/styles/widescreen_large/s3/s3fs-public/cancer_travel_mcintyre_2_bw_0.jpg?itok=DcH6g44R">
+					<h2>What You Get When You Break Free and Try New Things</h2>
+					Optimal anxiety is that place where your mental productivity and performance reach their peak. Still, "increased performance" and "enhanced productivity" just sound like "do more stuff." What do you really get when you're willing to step outside of your comfort zone?
+					<ul>
+						<li><i>You'll be more productive.</i> Comfort kills productivity because without the sense of unease that comes from having deadlines and expectations, we tend to phone it in and do the minimum required to get by. We lose the drive and ambition to do more and learn new things. We also fall into the "work trap," where we feign "busy" as a way to stay in our comfort zones and avoid doing new things. Pushing your personal boundaries can help you hit your stride sooner, get more done, and find smarter ways to work.</li>
+						<li><i>You'll find it easier to push your boundaries in the future.</i> Once you start stepping out of your comfort zone, it gets easier over time. This same NYT article explains that as you step out of your comfort zone, you'll become accustomed to that state of optimal anxiety. "Productive discomfort," as they call it, becomes more normal to you, and you're willing to push farther before your performance falls off. This idea is well illustrated in this infographic at Future Science Leaders. At the bottom, you'll see that as you challenge yourself, your comfort zone adjusts so what was difficult and anxiety-inducing becomes easier as you repeat it.</li>
+						<li><i>You'll find it easier to brainstorm and harness your creativity.</i> This is a soft benefit, but it's fairly common knowledge (and it's easily reproducible) that seeking new experiences, learning new skills, and opening the door to new ideas inspire us and educate us in a way that little else does. Trying new things can make us reflect on our old ideas and where they clash with our new knowledge, and inspire us to learn more and challenge comfirmation bias, our tendency to only seek out information we already agree with. Even in the short term, a positively uncomfortable experience can help us brainstorm, see old problems in a new light, and tackle the challenges we face with new energy.</li></ul>
+
+					</ul>
+				</article>
+			</div>
+			<div class="col">
+				<article>
+					<img class="img img-fluid" src="https://dunweg.nl/app/uploads/2016/10/eventbook-post-image2125.jpg">
+					<h2>How to Break Out of Your Comfort Zone</h2>
+					Outside your comfort zone can be a good place to be, as long as you don't tip the scales too far. It's important to remember there's a difference between the kind of controlled anxiety we're talking about and the very real anxiety that many people struggle with every day. Everyone's comfort zone is different, and what may expand your horizons may paralyze someone else. Remember, optimal anxiety can bring out your best, but too much is a bad thing.
+					<br>
+					Here are some ways to break out (and by proxy, expand) your comfort zone without going too far:
+					<br>
+					<ul>
+						<li><i>Do everyday things differently.</i> Take a different route to work. Try a new restaurant without checking Yelp first. Go vegetarian for a week, or a month. Try a new operating system. Recalibrate your reality. Whether the change you make is large or small, make a change in the way you do things on a day-to-day basis. Look for the perspective that comes from any change, even if it's negative. Don't be put off if things don't work out the way you planned.</li>
+						<li><i>Take your time making decisions.</i> Sometimes slowing down is all it takes to make you uncomfortable—especially if speed and quick thinking are prized in your work or personal life. Slow down, observe what's going on, take your time to interpret what you see, and then intervene. Sometimes just defending your right to make an educated decision can push you out of your comfort zone. Think, don't just react.</li>
+						<li><i>Trust yourself and make snap decisions.</i> We're contradicting ourselves, but there's a good reason. Just as there are people who thrive on snap decisions, others are more comfortable weighing all of the possible options several times, over and over again. Sometimes making a snap call is in order, just to get things moving. Doing so can help you kickstart your personal projects and teach you to trust your judgement. It'll also show you there's fallout to quick decisions as well as slow ones.</li>
+						<li><i>Do it in small steps.</i> It takes a lot of courage to break out of your comfort zone. You get the same benefits whether you go in with both feet as you do if you start slow, so don't be afraid to start slow. If you're socially anxious, don't assume you have to muster the courage to ask your crush on a date right away, just say hello to them and see where you can go from there. Identify your fears, and then face them step by step.</li></ul>
+
+					</article>
+				</div>
+				<div class="col">
+					<article>
+						<img class="img img-fluid" src="https://www.improvisedlife.com/cms/wp-content/uploads/2018/01/Breakfast-at-Tiffany-sleep-B-W.jpg">
+						<h2>Why It's Important to Return To Your Comfort Zone from Time to Time</h2>
+						You can't live outside of your comfort zone all the time. You need to come back from time to time to process your experiences. The last thing you want is for the new and interesting to quickly become commonplace and boring. This phenomenon, called hedonistic adaptation, is the natural tendency to be impressed by new things only to have the incredible become ordinary after a short time. It's why we can have access to the greatest repository of human knowledge ever created (the internet) at our fingertips (on our smartphones) and still get so bored that all we think of is how quickly we can get newer, faster access. In one way it drives us forward, but in another it keeps us from appreciating the subtle and the everyday.
+						<br>
+						You can fight this by trying new, smaller things. Ordering something new at a restaurant where you get the same thing every visit can be eye-opening the same way visiting a new country can be, and both push you out of your comfortable spaces. Diversify the challenges you embrace so you don't just push your boundaries in the same direction. If you've been learning Latin-based languages and you find yourself bored, switch gears to a language with a completely different set of characters. If you've taken up running, instead of just trying to run longer and farther, try challenging yourself to run on different terrain. You still get the challenge, but you broaden your horizons in a different way. 
+						<br>
+						<a class="btn btn-primary" target="_blank" href="https://www.psychologytoday.com/us/blog/the-tools/201205/the-comfort-zone" id="moreBtn">
+							More interesting facts..
+						</a>
+					</article>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<div class="container-fluid">
+			<!-- <div class="row">
+			-->
+
+			
+			<div class="col-6 col-md-4 text-light text-left">
+				<div id="year">Riga Coding School</div>
+			</div>
+			<div class="col-6 col-md-4 text-light text-center">
+				
+				By Lelde Feldmane
+
+			</div>
+			<div class="col-6 col-md-4 text-light text-right">
+				<p>2018</p>
+			</div>
+		</nav>
+	</div>
+</div>
+
+
+<script
+src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script type="text/javascript">
+</script>
+
+</body>
+</html>

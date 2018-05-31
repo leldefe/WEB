@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Indie+Flower');
+
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Goudy+Bookletter+1911|IM+Fell+French+Canon+SC|Quicksand');
+
+
+/*font-family: 'Goudy Bookletter 1911', serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'IM Fell French Canon SC', serif;
+font-family: 'Cinzel', serif;
+*/
+H1 { 
+    background: #BC8F8F;
+    color:white;
+    margin:px 0px 0px 0px;
+    font-size:25px;
+    padding:5px 10px 5px 10px;
+    text-align:left;    
+}
+
+H2{
+
+   font-size:25px; 
+   font-weight: bold;
+}
+body {
+    font-family:'Goudy Bookletter 1911', serif, verdana,helvetica,arial,sans-serif;
+    border:0px; margin:0px; padding:0px;
+    background-color: whitesmoke;
+       
+    /*background:url(
+        data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAIUlEQVQYV2N89urtfwYiACNIoZSYMCMhtaMK8YYQ0cEDAG5yJ8eLRhTfAAAAAElFTkSuQmCC
+    ) repeat;*/
+}
+header {
+    font-size:25px;
+}
+#aboutUs2{
+    background: #BC8F8F;
+    color:#BC8F8F;
+    padding-top: 20px;
+
+    }
+#aboutUs{
+    background: #343a40;
+}
+
+#moreBtn{
+    background-color: #343a40;
+    border-color: #343a40;
+
+}
+
+.cell-border-left{
+    border-left: 2px solid black;
+}
+
+.cell-border-bottom{
+    border-bottom: 2px solid black;
+}
+.cell-border-right{
+    border-right: 2px solid black;
+}
+
+.cell-border-top{
+    border-top: 2px solid black;
+}
+
+#paddingtable{
+    padding-top: 35px;
+}
+.wrapper {
+    padding-top: 5px;
+    text-align: center;
+}
+
+/*sudoku2{
+    font-family: 'Goudy Bookletter 1911', serif;
+    float: left!important;
+
+}*/
